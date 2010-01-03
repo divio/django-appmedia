@@ -1,10 +1,6 @@
 from setuptools import setup, find_packages
 import os
 import appmedia
-media_files = []
-
-for dirpath, dirnames, filenames in os.walk('cms/media'):
-    media_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
 setup(
     author="Patrick Lauber",
@@ -34,6 +30,5 @@ setup(
     package_dir={
         'appmedia': 'appmedia',
     },
-    data_files = media_files,
     zip_safe = False
 )
