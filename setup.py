@@ -7,6 +7,7 @@ setup(
     author_email="digi@treepy.com",
     name='django-appmedia',
     version=appmedia.__version__,
+    url = 'http://github.com/divio/django-appmedia',
     description='Handling django app media',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
     platforms=['OS Independent'],
