@@ -27,7 +27,7 @@ If the symlink name already exists, it assumes the media directory is not subfol
         apps = get_apps()
         for app in apps:
             
-            app_file = app.__file__
+            app_file = os.path.abspath(app.__file__)
             if os.path.splitext(app_file)[0].endswith('/__init__'):
                 # models are an folder, go one level up
                 app_file = os.path.dirname(app_file)
